@@ -18,11 +18,41 @@ namespace WPF_ToDo
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
+  
     public partial class MainWindow : Window
     {
+        // Define Elements
+        static TextBox addBoxElement;
+        static ListBox taskBoxElement;
+        static Button addBtnElement;
+        static Button remBtnElement;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            //Initialize Elements
+            addBoxElement = (TextBox)FindName("addTaskBox");
+            addBoxElement.Clear();
+            taskBoxElement = (ListBox)FindName("allTaskBox");
+            addBtnElement = (Button)FindName("addBtn");
+            remBtnElement = (Button)FindName("remBtn");
+        }
+
+        public void addTask()
+        {
+            taskBoxElement.Items.Add(addBoxElement.Text);
+            addBoxElement.Clear();
+        }
+
+        public void remTask()
+        {
+
+        }
+
+        private void addBtn_Click(object sender, RoutedEventArgs e)
+        {
+            addTask();
         }
     }
 }

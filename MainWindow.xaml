@@ -23,11 +23,9 @@
         </Grid.ColumnDefinitions>
         <Label Content="Add Task" Grid.Row="1" Grid.Column="1"/>
         <Label Content="Open Tasks" Grid.Row="1" Grid.Column="3"/>
-        <TextBox Text="Test" Grid.Row="2" Grid.Column="1"/>
-        <ListBox Grid.Row="2" Grid.Column="3">
-            <ListBoxItem Content="Test"/>
-        </ListBox>
-        <Button Content="Create new Task" Grid.Row="3" Grid.Column="1" Margin="5,20"/>
-        <Button Content="Delete selected Task" Grid.Row="3" Grid.Column="3" Margin="5, 20"/>
+        <TextBox x:Name="addTaskBox"  Text="Test" Grid.Row="2" Grid.Column="1"/>
+        <ListBox x:Name="allTaskBox" Grid.Row="2" Grid.Column="3"/>
+        <Button x:Name="addBtn" Content="Create new Task" Grid.Row="3" Grid.Column="1" Margin="5,20" Click="addBtn_Click"/>
+        <Button x:Name="remBtn"  Content="Delete selected Task" Grid.Row="3" Grid.Column="3" Margin="5, 20"/>
     </Grid>
 </Window>
