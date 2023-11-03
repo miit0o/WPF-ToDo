@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
         <Label Content="Add Task" Grid.Row="1" Grid.Column="1"/>
         <Label Content="Open Tasks" Grid.Row="1" Grid.Column="3"/>
-        <TextBox x:Name="addTaskBox"  Text="Test" Grid.Row="2" Grid.Column="1" KeyDown="addTaskBox_KeyDown"/>
+        <TextBox x:Name="addTaskBox"  Text="Test" Grid.Row="2" Grid.Column="1" KeyDown="addTaskBox_KeyDown" TextWrapping="Wrap"/>
         <ListBox x:Name="allTaskBox" Grid.Row="2" Grid.Column="3" KeyDown="allTaskBox_KeyDown"/>
         <Button x:Name="addBtn" Content="Create new Task" Grid.Row="3" Grid.Column="1" Margin="5,20" Click="addBtn_Click"/>
         <Button x:Name="remBtn"  Content="Delete selected Task" Grid.Row="3" Grid.Column="3" Margin="5, 20" Click="remBtn_Click"/>
