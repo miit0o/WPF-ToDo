@@ -59,5 +59,21 @@ namespace WPF_ToDo
         {
             remTask();
         }
+
+        private void addTaskBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                addTask();
+            }
+        }
+
+        private void allTaskBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Delete || e.Key == Key.Back)
+            {
+                remTask();
+            }
+        }
     }
 }
