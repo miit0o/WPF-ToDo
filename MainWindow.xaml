@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_ToDo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WPF-ToDo" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Add Task" Grid.Row="1" Grid.Column="1"/>
+        <Label Content="Open Tasks" Grid.Row="1" Grid.Column="3"/>
+        <TextBox Text="Test" Grid.Row="2" Grid.Column="1"/>
+        <ListBox Grid.Row="2" Grid.Column="3">
+            <ListBoxItem Content="Test"/>
+        </ListBox>
+        <Button Content="Create new Task" Grid.Row="3" Grid.Column="1" Margin="5,20"/>
+        <Button Content="Delete selected Task" Grid.Row="3" Grid.Column="3" Margin="5, 20"/>
     </Grid>
 </Window>
