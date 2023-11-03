@@ -47,12 +47,17 @@ namespace WPF_ToDo
 
         public void remTask()
         {
-
+            taskBoxElement.Items.Remove(taskBoxElement.SelectedItem);
         }
 
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
             addTask();
+        }
+
+        private void remBtn_Click(object sender, RoutedEventArgs e)
+        {
+            remTask();
         }
     }
 }

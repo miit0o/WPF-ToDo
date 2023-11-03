@@ -26,6 +26,6 @@
         <TextBox x:Name="addTaskBox"  Text="Test" Grid.Row="2" Grid.Column="1"/>
         <ListBox x:Name="allTaskBox" Grid.Row="2" Grid.Column="3"/>
         <Button x:Name="addBtn" Content="Create new Task" Grid.Row="3" Grid.Column="1" Margin="5,20" Click="addBtn_Click"/>
-        <Button x:Name="remBtn"  Content="Delete selected Task" Grid.Row="3" Grid.Column="3" Margin="5, 20"/>
+        <Button x:Name="remBtn"  Content="Delete selected Task" Grid.Row="3" Grid.Column="3" Margin="5, 20" Click="remBtn_Click"/>
     </Grid>
 </Window>
